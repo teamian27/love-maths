@@ -31,10 +31,14 @@ function runGame(gameType) {
     let num1 = Math.floor(Math.random() * 25) + 1;
     let num2 = Math.floor(Math.random() * 25) + 1;
 
+    let num3 = Math.floor(Math.random() * 12) + 1;
+    let num4 = Math.floor(Math.random() * 12) + 1;
+
+
     if (gameType === "addition") {
        displayAdditionQuestion(num1, num2);       
     } else if (gameType === "multiply") {
-        displayMultiplyQuestion(num1, num2);
+        displayMultiplyQuestion(num3, num4);
     } else if (gameType === "subtract") {
         displaySubtractQuestion(num1, num2);
     } else if (gameType === "division") {
